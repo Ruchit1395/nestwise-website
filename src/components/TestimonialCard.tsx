@@ -28,7 +28,9 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
         <div>
           <div className="font-semibold text-primary">{testimonial.name}</div>
           <div className="text-sm text-gray-500">{testimonial.title}</div>
-          <div className="text-sm text-gray-400">{testimonial.company}</div>
+          {testimonial.company && (
+            <div className="text-sm text-gray-400">{testimonial.company}</div>
+          )}
         </div>
       </div>
     </div>

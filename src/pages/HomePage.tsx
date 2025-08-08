@@ -3,10 +3,8 @@ import { ArrowRight, TrendingUp, AlertTriangle, CheckCircle } from 'lucide-react
 import StatsBar from '../components/StatsBar';
 import FeatureCard from '../components/FeatureCard';
 import TestimonialCard from '../components/TestimonialCard';
-import PricingCard from '../components/PricingCard';
 import { features } from '../data/features';
 import { testimonials } from '../data/testimonials';
-import { pricingTiers } from '../data/pricing';
 
 const HomePage: React.FC = () => {
   return (
@@ -154,33 +152,9 @@ const HomePage: React.FC = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {testimonials.map((testimonial, index) => (
               <TestimonialCard key={testimonial.id} testimonial={testimonial} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Pricing Section */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-primary mb-6">Invest in Peace of Mind</h2>
-            <div className="bg-accent/10 rounded-xl p-6 max-w-2xl mx-auto mb-8">
-              <div className="flex items-center justify-center">
-                <TrendingUp className="w-8 h-8 text-accent mr-3" />
-                <div className="text-2xl font-bold text-primary">
-                  $45,000 savings vs $348 cost = 
-                  <span className="text-accent"> 13,000% ROI</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {pricingTiers.map((tier) => (
-              <PricingCard key={tier.id} tier={tier} />
             ))}
           </div>
         </div>
