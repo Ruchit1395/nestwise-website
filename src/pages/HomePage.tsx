@@ -32,9 +32,6 @@ const HomePage: React.FC = () => {
                   Track My REPS NOW!
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </button>
-                <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-all duration-200">
-                  See Demo
-                </button>
               </div>
             </div>
             
@@ -179,10 +176,6 @@ const HomePage: React.FC = () => {
           <button className="bg-accent text-white px-12 py-6 rounded-lg font-bold text-xl hover:bg-accent/90 transition-all duration-200 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 animate-bounce-subtle">
             Start Tracking Today - Risk Free!
           </button>
-          
-          <p className="mt-6 text-gray-300">
-            30-day money-back guarantee • No setup fees • Cancel anytime
-          </p>
         </div>
       </section>
     </div>
