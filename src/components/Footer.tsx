@@ -10,7 +10,11 @@ const Footer: React.FC = () => {
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
             <Link to="/" className="text-2xl font-bold">
-              NestWise
+              <img 
+                src="/NW Logo.jpg.jpg" 
+                alt="NestWise" 
+                className="h-8 w-auto"
+              />
             </Link>
             <p className="mt-4 text-gray-300 max-w-md">
               The professional REPS compliance tracking platform trusted by thousands of real estate investors.

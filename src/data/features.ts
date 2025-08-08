@@ -5,44 +5,28 @@ export const features: FeatureType[] = [
     id: '1',
     icon: 'Target',
     title: 'Smart Logging',
-    description: 'Effortless time tracking that meets IRS standards.',
-    benefits: [
-      'One-click time logging',
-      'IRS-approved categories',
-      'Smart suggestions'
-    ]
+    description: 'One-click time tracking with IRS-approved categories and smart suggestions.',
+    benefits: []
   },
   {
     id: '2',
     icon: 'BarChart3',
     title: 'Live Status',
-    description: 'Know your REPS status instantly with visual indicators.',
-    benefits: [
-      'Traffic light status',
-      'Hours remaining',
-      'Progress tracking'
-    ]
+    description: 'Real-time REPS qualification status with visual progress indicators.',
+    benefits: []
   },
   {
     id: '3',
     icon: 'FileText',
     title: 'Instant Reports',
-    description: 'Generate professional reports in seconds.',
-    benefits: [
-      'One-click PDF',
-      'CPA-approved format',
-      'Audit-ready docs'
-    ]
+    description: 'One-click PDF generation in CPA-approved, audit-ready format.',
+    benefits: []
   },
   {
     id: '4',
     icon: 'Bell',
     title: 'Smart Alerts',
-    description: 'Stay on track with intelligent reminders.',
-    benefits: [
-      'Custom reminders',
-      'Deadline alerts',
-      'Progress updates'
-    ]
+    description: 'Custom reminders and deadline alerts to keep you on track.',
+    benefits: []
   }
 ];

@@ -22,7 +22,11 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <span className="text-2xl font-bold text-primary">NestWise</span>
+            <img 
+              src="/NW Logo.jpg.jpg" 
+              alt="NestWise" 
+              className="h-10 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
