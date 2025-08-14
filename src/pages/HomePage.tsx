@@ -28,7 +28,7 @@ const HomePage: React.FC = () => {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-accent text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-accent/90 transition-all duration-200 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 flex items-center justify-center">
+                <button className="bg-cta text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-cta/90 transition-all duration-200 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 flex items-center justify-center">
                   Track My REPS NOW!
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </button>
@@ -203,7 +203,7 @@ const HomePage: React.FC = () => {
             Join smart investors like you who've achieved REPS qualification with our structured, IRS-approved tracking system.
           </p>
           
-          <button className="bg-accent text-white px-12 py-6 rounded-lg font-bold text-xl hover:bg-accent/90 transition-all duration-200 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 animate-bounce-subtle">
+          <button className="bg-cta text-white px-12 py-6 rounded-lg font-bold text-xl hover:bg-cta/90 transition-all duration-200 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 animate-bounce-subtle">
             Start Tracking Today - Risk Free!
           </button>
         </div>

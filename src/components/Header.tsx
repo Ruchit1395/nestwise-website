@@ -9,8 +9,6 @@ const Header: React.FC = () => {
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'Features', href: '/features' },
-    { name: 'Pricing', href: '/pricing' },
-    { name: 'Blogs', href: '/blogs' },
     { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
   ];
@@ -24,7 +22,7 @@ const Header: React.FC = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
-              src="/NW Logo.jpg.jpg" 
+              src="/nestwise_logo_teal_cream_bg.png" 
               alt="NestWise" 
               className="h-16 w-auto"
             />
@@ -49,7 +47,7 @@ const Header: React.FC = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex">
-            <button className="bg-accent text-white px-6 py-2 rounded-lg font-semibold hover:bg-accent/90 transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+            <button className="bg-cta text-white px-6 py-2 rounded-lg font-semibold hover:bg-cta/90 transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
               Track My REPS NOW!
             </button>
           </div>
@@ -81,7 +79,7 @@ const Header: React.FC = () => {
                   {item.name}
                 </Link>
               ))}
-              <button className="w-full mt-4 bg-accent text-white px-6 py-2 rounded-lg font-semibold">
+              <button className="w-full mt-4 bg-cta text-white px-6 py-2 rounded-lg font-semibold">
                 Track My REPS NOW!
               </button>
             </div>

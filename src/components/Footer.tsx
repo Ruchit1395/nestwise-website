@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
           <div className="col-span-1 md:col-span-2">
             <Link to="/" className="text-2xl font-bold">
               <img 
-                src="/NW Logo.jpg.jpg" 
+                src="/nestwise_logo_teal_cream_bg.png" 
                 alt="NestWise" 
                 className="h-8 w-auto"
               />
