@@ -3,37 +3,37 @@ import { TestimonialType } from '../types';
 export const testimonials: TestimonialType[] = [
   {
     id: '1',
-    name: 'Mike Chen',
+    name: 'Mike',
     title: 'Investor',
     company: '',
-    quote: 'I\'ve got REPS hours spread across three spreadsheets and a dozen sticky notes. When my CPA asked for proof, it took me days to pull everything together.',
+    quote: 'I used to forget to log hours for weeks — now I have a clear, consistent tracking process.',
     avatar: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
     rating: 5
   },
   {
     id: '2',
-    name: 'Jennifer Walsh',
+    name: 'Jennifer',
     title: 'Landlord',
     company: '',
-    quote: 'The worst part is realizing you forgot to log hours weeks ago. Then you\'re guessing — and guessing doesn\'t work in an audit.',
+    quote: 'All my REPS activity logs are finally in one place. No more sticky notes or random spreadsheets.',
     avatar: 'https://images.pexels.com/photos/3781529/pexels-photo-3781529.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
     rating: 5
   },
   {
     id: '3',
-    name: 'David Rodriguez',
+    name: 'David',
     title: 'Real Estate',
     company: '',
-    quote: 'Every year, I spend hours digging through my calendar, receipts, and random notes just to prove my activity. It\'s exhausting.',
+    quote: 'Tracking hours used to be chaotic. With a proper system, I know I\'m audit-ready.',
     avatar: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
     rating: 5
   },
   {
     id: '4',
-    name: 'Sarah M.',
+    name: 'Sarah',
     title: 'CPA',
     company: '',
-    quote: 'The IRS isn\'t kidding about documentation. A client of mine lost deductions because their logs were incomplete and inconsistent.',
+    quote: 'Having everything categorized per IRS guidance gives me confidence I\'m on track for REPS.',
     avatar: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
     rating: 5
   }

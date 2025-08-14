@@ -4,7 +4,7 @@ export const features: FeatureType[] = [
   {
     id: '1',
     icon: 'Target',
-    title: 'Smart Logging',
+    title: 'Smart Tracking',
     description: 'One-click time tracking with IRS-approved categories and smart suggestions.',
     benefits: []
   },
@@ -19,7 +19,7 @@ export const features: FeatureType[] = [
     id: '3',
     icon: 'FileText',
     title: 'Instant Reports',
-    description: 'One-click PDF generation in CPA-approved, audit-ready format.',
+    description: 'One-click PDF generation in CPA-Compliant, audit-ready format.',
     benefits: []
   },
   {

@@ -10,6 +10,7 @@ const Header: React.FC = () => {
     { name: 'Home', href: '/' },
     { name: 'Features', href: '/features' },
     { name: 'Pricing', href: '/pricing' },
+    { name: 'Blogs', href: '/blogs' },
     { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
   ];
@@ -25,7 +26,7 @@ const Header: React.FC = () => {
             <img 
               src="/NW Logo.jpg.jpg" 
               alt="NestWise" 
-              className="h-10 w-auto"
+              className="h-16 w-auto"
             />
           </Link>
 
