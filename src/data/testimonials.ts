@@ -6,7 +6,7 @@ export const testimonials: TestimonialType[] = [
     name: 'Mike',
     title: 'Investor',
     company: '',
-    quote: 'I used to forget to log hours for weeks — now I have a clear, consistent tracking process.',
+    quote: 'I used to forget to log hours for weeks - now I have a clear, consistent tracking process.',
     avatar: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
     rating: 5
   },

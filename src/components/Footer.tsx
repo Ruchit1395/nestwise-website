@@ -16,6 +16,9 @@ const Footer: React.FC = () => {
                 className="h-8 w-auto"
               />
             </Link>
+            <p className="mt-2 text-sm font-semibold text-primary">
+              Time is money. We save BOTH.
+            </p>
             <p className="mt-4 text-gray-600 max-w-md">
               The professional REPS compliance tracking platform trusted by thousands of real estate investors.
             </p>
