@@ -7,10 +7,12 @@ import FeaturesPage from './pages/FeaturesPage';
 import PricingPage from './pages/PricingPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+import { PerformanceOptimizer } from './components/PerformanceOptimizer';
 
 function App() {
   return (
     <Router>
+      <PerformanceOptimizer />
       <div className="min-h-screen bg-white">
         <Header />
         <main>
