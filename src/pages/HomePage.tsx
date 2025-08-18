@@ -20,7 +20,7 @@ const HomePage: React.FC = () => {
                 <span className="text-accent"> Qualification Starts Here</span>
               </h1>
               <p className="text-xl mb-8 text-neutral-700">
-                REPS Tracking Made Simple, Accurate, and IRS-Ready
+                REPS Tracking Made Simple, Accurate, and IRS-Ready - Auto Deploy Test ✅
               </p>
               
               <div className="mb-12">
