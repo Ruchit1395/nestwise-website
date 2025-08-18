@@ -17,7 +17,7 @@ const HomePage: React.FC = () => {
             <div className="animate-slide-up">
               <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                 Your Path to REPS 
-                <span className="text-accent"> Qualification Starts Here</span>
+                <span className="text-secondary"> Qualification Starts Here</span>
               </h1>
               <p className="text-xl mb-8 text-neutral-700">
                 REPS Tracking Made Simple, Accurate, and IRS-Ready - Auto Deploy Test ✅
@@ -66,7 +66,7 @@ const HomePage: React.FC = () => {
       <section className="py-20 bg-neutral-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-primary mb-6">Your REPS Journey — Simplified and Structured</h2>
+            <h2 className="text-4xl font-bold text-primary mb-6">Your REPS Journey - Simplified and Structured</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Achieving REPS qualification means consistent tracking of your hours in approved activities. Our system is built around IRS guidelines, giving you clarity, confidence, and control over your logs.
             </p>
