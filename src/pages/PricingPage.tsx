@@ -124,21 +124,21 @@ const PricingPage: React.FC = () => {
                         {row.basic ? (
                           <Check className="w-5 h-5 text-secondary mx-auto" />
                         ) : (
-                          <span className="text-gray-400">—</span>
+                          <span className="text-gray-400">-</span>
                         )}
                       </td>
                       <td className="px-6 py-4 text-center">
                         {row.pro ? (
                           <Check className="w-5 h-5 text-secondary mx-auto" />
                         ) : (
-                          <span className="text-gray-400">—</span>
+                          <span className="text-gray-400">-</span>
                         )}
                       </td>
                       <td className="px-6 py-4 text-center">
                         {row.enterprise ? (
                           <Check className="w-5 h-5 text-secondary mx-auto" />
                         ) : (
-                          <span className="text-gray-400">—</span>
+                          <span className="text-gray-400">-</span>
                         )}
                       </td>
                     </tr>
