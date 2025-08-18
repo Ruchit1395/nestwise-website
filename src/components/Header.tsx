@@ -47,9 +47,9 @@ const Header: React.FC = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex">
-            <button className="bg-cta text-white px-6 py-2 rounded-lg font-semibold hover:bg-cta/90 transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+            <a href="https://app.nestwise.us" className="bg-cta text-white px-6 py-2 rounded-lg font-semibold hover:bg-cta/90 transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
               Track My REPS NOW!
-            </button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -79,9 +79,9 @@ const Header: React.FC = () => {
                   {item.name}
                 </Link>
               ))}
-              <button className="w-full mt-4 bg-cta text-white px-6 py-2 rounded-lg font-semibold">
+              <a href="https://app.nestwise.us" className="w-full mt-4 bg-cta text-white px-6 py-2 rounded-lg font-semibold block text-center">
                 Track My REPS NOW!
-              </button>
+              </a>
             </div>
           </div>
         )}
