@@ -10,14 +10,14 @@ const HomePage: React.FC = () => {
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary to-primary/80 text-neutral-800 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-secondary to-secondary/80 text-neutral-800 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/5849590/pexels-photo-5849590.jpeg?auto=compress&cs=tinysrgb&w=1920')] bg-cover bg-center opacity-10"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-up">
               <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                 Your Path to REPS 
-                <span className="text-secondary"> Qualification Starts Here</span>
+                <span className="text-accent"> Qualification Starts Here</span>
               </h1>
               <p className="text-xl mb-8 text-neutral-700">
                 REPS Tracking Made Simple, Accurate, and IRS-Ready - Auto Deploy Test ✅
