@@ -72,25 +72,101 @@ const FeaturesPage: React.FC = () => {
           </p>
           
           {/* Feature Comparison Visual */}
-          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 max-w-4xl mx-auto shadow-xl">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="text-center">
-                <div className="text-red-600 text-4xl font-bold mb-4">Manual Tracking</div>
-                <ul className="space-y-3 text-gray-700">
-                  <li>• Spreadsheet chaos</li>
-                  <li>• Missing documentation</li>
-                  <li>• Audit failures</li>
-                  <li>• Lost tax savings</li>
-                </ul>
-              </div>
-              <div className="text-center">
-                <div className="text-primary text-4xl font-bold mb-4">nestwise</div>
-                <ul className="space-y-3 text-gray-700">
-                  <li>• Automated compliance</li>
-                  <li>• Complete documentation</li>
-                  <li>• Audit-ready reports</li>
-                  <li>• Maximum tax benefits</li>
-                </ul>
+          <div className="relative max-w-6xl mx-auto">
+            {/* Background Glow Effects */}
+            <div className="absolute inset-0 bg-gradient-to-r from-red-500/20 via-transparent to-primary/20 rounded-3xl blur-3xl"></div>
+            
+            <div className="relative bg-white/95 backdrop-blur-sm rounded-3xl p-8 lg:p-12 shadow-2xl border border-white/20">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+                
+                {/* Manual Tracking - Left Side */}
+                <div className="relative group">
+                  {/* Red Warning Icon */}
+                  <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-red-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.34 16.5c-.77.833.192 2.5 1.732 2.5z" />
+                    </svg>
+                  </div>
+                  
+                  <div className="text-center pt-8">
+                    <h3 className="text-3xl lg:text-4xl font-bold text-red-600 mb-6 group-hover:text-red-700 transition-colors">
+                      Manual Tracking
+                    </h3>
+                    <div className="space-y-4">
+                      <div className="flex items-center justify-center space-x-3 text-red-500 group-hover:text-red-600 transition-colors">
+                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                        </svg>
+                        <span className="text-lg font-semibold">Spreadsheet chaos</span>
+                      </div>
+                      <div className="flex items-center justify-center space-x-3 text-red-500 group-hover:text-red-600 transition-colors">
+                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                        </svg>
+                        <span className="text-lg font-semibold">Missing documentation</span>
+                      </div>
+                      <div className="flex items-center justify-center space-x-3 text-red-500 group-hover:text-red-600 transition-colors">
+                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                        </svg>
+                        <span className="text-lg font-semibold">Audit failures</span>
+                      </div>
+                      <div className="flex items-center justify-center space-x-3 text-red-500 group-hover:text-red-600 transition-colors">
+                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                        </svg>
+                        <span className="text-lg font-semibold">Lost tax savings</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* VS Divider */}
+                <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-gradient-to-br from-red-500 to-primary rounded-full flex items-center justify-center shadow-lg border-4 border-white">
+                  <span className="text-white font-bold text-xl">VS</span>
+                </div>
+
+                {/* nestwise - Right Side */}
+                <div className="relative group">
+                  {/* Success Icon with Glow */}
+                  <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  
+                  <div className="text-center pt-8">
+                    <h3 className="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-6 group-hover:from-accent group-hover:to-primary transition-all duration-300">
+                      nestwise
+                    </h3>
+                    <div className="space-y-4">
+                      <div className="flex items-center justify-center space-x-3 text-primary group-hover:text-accent transition-colors">
+                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        <span className="text-lg font-semibold">Automated compliance</span>
+                      </div>
+                      <div className="flex items-center justify-center space-x-3 text-primary group-hover:text-accent transition-colors">
+                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        <span className="text-lg font-semibold">Complete documentation</span>
+                      </div>
+                      <div className="flex items-center justify-center space-x-3 text-primary group-hover:text-accent transition-colors">
+                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        <span className="text-lg font-semibold">Audit-ready reports</span>
+                      </div>
+                      <div className="flex items-center justify-center space-x-3 text-primary group-hover:text-accent transition-colors">
+                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        <span className="text-lg font-semibold">Maximum tax benefits</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
