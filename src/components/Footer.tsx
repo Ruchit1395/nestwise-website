@@ -67,9 +67,9 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-4">Support</h3>
             <ul className="space-y-2">
               <li>
-                <a href="mailto:support@nestwise.com" className="text-gray-600 hover:text-primary transition-colors flex items-center">
+                <a href="mailto:support@nestwise.us" className="text-gray-600 hover:text-primary transition-colors flex items-center">
                   <Mail className="w-4 h-4 mr-2" />
-                  support@nestwise.com
+                  support@nestwise.us
                 </a>
               </li>
               <li>
@@ -85,9 +85,9 @@ const Footer: React.FC = () => {
             © 2025 NestWise LLC. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0 flex space-x-6 text-sm text-gray-600">
-            <a href="#" className="hover:text-primary">Privacy Policy</a>
-            <a href="#" className="hover:text-primary">Terms of Service</a>
-            <a href="#" className="hover:text-primary">Cookie Policy</a>
+            <Link to="/privacy" className="hover:text-primary">Privacy Policy</Link>
+            <Link to="/terms" className="hover:text-primary">Terms of Service</Link>
+            <Link to="/cookies" className="hover:text-primary">Cookie Policy</Link>
           </div>
         </div>
       </div>

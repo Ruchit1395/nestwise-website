@@ -63,7 +63,7 @@ const ContactPage: React.FC = () => {
                   <Clock className="w-4 h-4 mr-2" />
                   Response time: &lt; 4 hours
                 </div>
-                <div className="text-accent font-semibold">support@nestwise.com</div>
+                <div className="text-accent font-semibold">support@nestwise.us</div>
               </div>
               <button className="bg-accent text-white px-6 py-3 rounded-lg font-semibold hover:bg-accent/90 transition-colors">
                 Send Email
