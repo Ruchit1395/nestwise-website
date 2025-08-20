@@ -7,7 +7,10 @@ import FeaturesPage from './pages/FeaturesPage';
 import PricingPage from './pages/PricingPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+import BlogPage from './pages/BlogPage';
+import BlogPostPage from './pages/BlogPostPage';
 import { PerformanceOptimizer } from './components/PerformanceOptimizer';
+import AdminRedirect from './components/AdminRedirect';
 
 function App() {
   return (
@@ -22,6 +25,9 @@ function App() {
             <Route path="/pricing" element={<PricingPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/blog/:slug" element={<BlogPostPage />} />
+            <Route path="/admin/*" element={<AdminRedirect />} />
           </Routes>
         </main>
         <Footer />
