@@ -27,16 +27,16 @@ const AdminPage: React.FC = () => {
               try {
                 window.NetlifyCMS.init({
                   config: {
-                    backend: {
-                      name: 'git-gateway',
-                      branch: 'main',
-                      site_id: 'nestwise25.netlify.app'
-                    },
+                                    backend: {
+                  name: 'git-gateway',
+                  branch: 'main',
+                  site_id: 'e1fa7c8b-24da-40c5-a0b8-a838cf199ad7'
+                },
                     local_backend: false,
                     media_folder: 'public/images/blog',
                     public_folder: '/images/blog',
-                    site_url: 'https://nestwise25.netlify.app',
-                    display_url: 'https://nestwise25.netlify.app',
+                                    site_url: 'https://www.nestwise.us',
+                display_url: 'https://www.nestwise.us',
                     collections: [
                       {
                         name: 'blog',
