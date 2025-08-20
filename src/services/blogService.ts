@@ -1,11 +1,13 @@
-import client from '../lib/contentful';
+import { getContentfulClient } from '../lib/contentful';
 import { BlogPost } from '../types/blog';
 
 export const getAllBlogPosts = async (): Promise<BlogPost[]> => {
   try {
-    // Check if client is properly configured
+    const client = await getContentfulClient();
+    
     if (!client) {
-      throw new Error('Contentful client not configured');
+      console.error('Contentful client not available');
+      return [];
     }
 
     const response = await client.getEntries({
@@ -24,9 +26,11 @@ export const getAllBlogPosts = async (): Promise<BlogPost[]> => {
 
 export const getBlogPostBySlug = async (slug: string): Promise<BlogPost | null> => {
   try {
-    // Check if client is properly configured
+    const client = await getContentfulClient();
+    
     if (!client) {
-      throw new Error('Contentful client not configured');
+      console.error('Contentful client not available');
+      return null;
     }
 
     const response = await client.getEntries({
@@ -48,9 +52,11 @@ export const getBlogPostBySlug = async (slug: string): Promise<BlogPost | null> 
 
 export const getBlogPostsByCategory = async (category: string): Promise<BlogPost[]> => {
   try {
-    // Check if client is properly configured
+    const client = await getContentfulClient();
+    
     if (!client) {
-      throw new Error('Contentful client not configured');
+      console.error('Contentful client not available');
+      return [];
     }
 
     const response = await client.getEntries({
