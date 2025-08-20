@@ -6,7 +6,7 @@ const AdminPage: React.FC = () => {
     const loadNetlifyCMS = () => {
       // Load CMS config first
       const configScript = document.createElement('script');
-      configScript.src = '/src/cms-config.js';
+      configScript.src = '/cms-config.js';
       configScript.onload = () => {
         // Load Netlify Identity widget
         const identityScript = document.createElement('script');
