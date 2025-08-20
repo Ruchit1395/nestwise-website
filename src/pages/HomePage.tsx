@@ -17,7 +17,7 @@ const HomePage: React.FC = () => {
             <div className="animate-slide-up">
               <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                 Your Path to REPS 
-                <span className="text-accent"> Qualification Starts Here</span>
+                <span className="text-primary font-extrabold"> Qualification Starts Here</span>
               </h1>
               <p className="text-xl mb-8 text-neutral-700">
                 REPS Tracking Made Simple, Accurate, and IRS-Ready
