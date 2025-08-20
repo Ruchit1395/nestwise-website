@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Clock, Book, Phone, CheckCircle } from 'lucide-react';
+import { Mail, Clock, CheckCircle } from 'lucide-react';
 
 const ContactPage: React.FC = () => {
 
@@ -24,71 +24,7 @@ const ContactPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Contact Options */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
-            {/* Email Support */}
-            <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300 text-center">
-              <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Mail className="w-8 h-8 text-accent" />
-              </div>
-              <h3 className="text-2xl font-bold text-primary mb-4">Email Support</h3>
-              <p className="text-gray-600 mb-6">
-                Get detailed help from our REPS compliance experts
-              </p>
-              <div className="space-y-2 mb-6">
-                <div className="flex items-center justify-center text-sm text-gray-600">
-                  <Clock className="w-4 h-4 mr-2" />
-                  Response time: &lt; 4 hours
-                </div>
-                <div className="text-accent font-semibold">support@nestwise.us</div>
-              </div>
-              <button className="bg-accent text-white px-6 py-3 rounded-lg font-semibold hover:bg-accent/90 transition-colors">
-                Send Email
-              </button>
-            </div>
 
-            {/* Knowledge Base */}
-            <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300 text-center">
-              <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Book className="w-8 h-8 text-secondary" />
-              </div>
-              <h3 className="text-2xl font-bold text-primary mb-4">Knowledge Base</h3>
-              <p className="text-gray-600 mb-6">
-                Instant answers to common REPS and tax questions
-              </p>
-              <div className="space-y-2 mb-6">
-                <div className="text-sm text-gray-600">50+ detailed guides</div>
-                <div className="text-sm text-gray-600">Video tutorials</div>
-                <div className="text-sm text-gray-600">Step-by-step walkthroughs</div>
-              </div>
-              <button className="bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:bg-secondary/90 transition-colors">
-                Browse Articles
-              </button>
-            </div>
-
-            {/* Premium Support */}
-            <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300 text-center border-2 border-accent">
-              <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Phone className="w-8 h-8 text-accent" />
-              </div>
-              <h3 className="text-2xl font-bold text-primary mb-4">Premium Support</h3>
-              <p className="text-gray-600 mb-6">
-                Coming soon: Phone & live chat for Enterprise customers
-              </p>
-              <div className="space-y-2 mb-6">
-                <div className="text-sm text-gray-600">Priority phone support</div>
-                <div className="text-sm text-gray-600">Live chat assistance</div>
-                <div className="text-sm text-gray-600">Dedicated account manager</div>
-              </div>
-              <button className="bg-gray-200 text-gray-500 px-6 py-3 rounded-lg font-semibold cursor-not-allowed">
-                Coming Soon
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Contact Us Directly */}
       <section className="py-20 bg-neutral-50">
