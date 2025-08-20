@@ -227,9 +227,9 @@ const AboutPage: React.FC = () => {
               </div>
             </div>
             
-            <button className="bg-accent text-white px-12 py-6 rounded-lg font-bold text-xl hover:bg-accent/90 transition-all duration-200 shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
+            <a href="https://app.nestwise.us" className="inline-block bg-cta text-white px-12 py-6 rounded-lg font-bold text-xl hover:bg-cta/90 transition-all duration-200 shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
               Start Your Success Story Today
-            </button>
+            </a>
             
             <p className="mt-6 text-gray-500">
               30-day money-back guarantee • No setup fees • Cancel anytime
