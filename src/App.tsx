@@ -7,16 +7,10 @@ import FeaturesPage from './pages/FeaturesPage';
 import PricingPage from './pages/PricingPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
-import BlogPage from './pages/BlogPage';
-import BlogPostPage from './pages/BlogPostPage';
-import AdminPage from './pages/AdminPage';
-import { PerformanceOptimizer } from './components/PerformanceOptimizer';
-import AdminRedirect from './components/AdminRedirect';
 
 function App() {
   return (
     <Router>
-      <PerformanceOptimizer />
       <div className="min-h-screen bg-white">
         <Header />
         <main>
@@ -26,9 +20,6 @@ function App() {
             <Route path="/pricing" element={<PricingPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
-            <Route path="/blog" element={<BlogPage />} />
-            <Route path="/blog/:slug" element={<BlogPostPage />} />
-            <Route path="/admin" element={<AdminPage />} />
           </Routes>
         </main>
         <Footer />
