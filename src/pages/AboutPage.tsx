@@ -116,7 +116,7 @@ const AboutPage: React.FC = () => {
             <div className="bg-green-50 rounded-2xl p-8 border-2 border-green-200">
               <div className="text-6xl font-bold text-green-600 mb-4">99.7%</div>
               <div className="text-xl font-semibold text-green-700 mb-2">success rate</div>
-                              <div className="text-gray-600">with proper nestwise tracking</div>
+                              <div className="text-gray-600">with proper REPS tracking</div>
             </div>
           </div>
         </div>
