@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
               Time is Money. We save you BOTH.
             </p>
             <p className="mt-4 text-gray-600 max-w-md">
-              The professional REPS compliance tracking platform trusted by thousands of real estate investors.
+              The REPS compliance tracking platform trusted by real estate investors like you.
             </p>
             <div className="mt-6 flex space-x-4">
               <div className="flex items-center text-sm text-gray-600">
