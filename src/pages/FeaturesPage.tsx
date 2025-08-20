@@ -222,9 +222,9 @@ const FeaturesPage: React.FC = () => {
             
             {/* Bottom CTA */}
             <div className="text-center mt-16">
-              <div className="inline-block bg-gradient-to-r from-primary to-accent text-white px-8 py-4 rounded-2xl text-xl font-bold shadow-2xl hover:shadow-primary/25 transition-all duration-300 hover:scale-105 transform">
+              <a href="https://app.nestwise.us" className="inline-block bg-gradient-to-r from-primary to-accent text-white px-8 py-4 rounded-2xl text-xl font-bold shadow-2xl hover:shadow-primary/25 transition-all duration-300 hover:scale-105 transform">
                 🎯 Ready to Transform Your REPS Journey?
-              </div>
+              </a>
             </div>
           </div>
         </div>
