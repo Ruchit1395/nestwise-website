@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 
 const AdminPage: React.FC = () => {
   useEffect(() => {
+    console.log('AdminPage mounted - starting CMS load process');
+    
     // Load Netlify CMS scripts
     const loadNetlifyCMS = () => {
       console.log('Loading Netlify CMS...');
@@ -10,56 +12,71 @@ const AdminPage: React.FC = () => {
       const identityScript = document.createElement('script');
       identityScript.src = 'https://identity.netlify.com/v1/netlify-identity-widget.js';
       identityScript.onload = () => {
-        console.log('Identity widget loaded');
+        console.log('Identity widget loaded successfully');
         
         // Load Netlify CMS
         const cmsScript = document.createElement('script');
         cmsScript.src = 'https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js';
         cmsScript.onload = () => {
-          console.log('CMS script loaded');
+          console.log('CMS script loaded successfully');
           
-          // Initialize CMS with inline config
-          if (window.NetlifyCMS) {
-            console.log('Initializing CMS...');
-            window.NetlifyCMS.init({
-              config: {
-                backend: {
-                  name: 'git-gateway',
-                  branch: 'main',
-                  site_id: 'nestwise25.netlify.app'
-                },
-                local_backend: false,
-                media_folder: 'public/images/blog',
-                public_folder: '/images/blog',
-                site_url: 'https://nestwise25.netlify.app',
-                display_url: 'https://nestwise25.netlify.app',
-                collections: [
-                  {
-                    name: 'blog',
-                    label: 'Blog Posts',
-                    folder: 'src/content/blog',
-                    create: true,
-                    slug: '{{year}}-{{month}}-{{day}}-{{slug}}',
-                    fields: [
-                      { label: 'Title', name: 'title', widget: 'string' },
-                      { label: 'SEO Title', name: 'seoTitle', widget: 'string', required: false },
-                      { label: 'SEO Description', name: 'seoDescription', widget: 'text', required: false },
-                      { label: 'Keywords', name: 'keywords', widget: 'string', required: false },
-                      { label: 'Excerpt', name: 'excerpt', widget: 'text' },
-                      { label: 'Content', name: 'body', widget: 'markdown' },
-                      { label: 'Author', name: 'author', widget: 'string', default: 'NestWise Team' },
-                      { label: 'Publish Date', name: 'date', widget: 'datetime' },
-                      { label: 'Featured Image', name: 'thumbnail', widget: 'image', required: false },
-                      { label: 'Read Time (minutes)', name: 'readTime', widget: 'number', default: 3 },
-                      { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
+          // Wait a bit for CMS to initialize
+          setTimeout(() => {
+            if (window.NetlifyCMS) {
+              console.log('NetlifyCMS found, initializing...');
+              try {
+                window.NetlifyCMS.init({
+                  config: {
+                    backend: {
+                      name: 'git-gateway',
+                      branch: 'main',
+                      site_id: 'nestwise25.netlify.app'
+                    },
+                    local_backend: false,
+                    media_folder: 'public/images/blog',
+                    public_folder: '/images/blog',
+                    site_url: 'https://nestwise25.netlify.app',
+                    display_url: 'https://nestwise25.netlify.app',
+                    collections: [
+                      {
+                        name: 'blog',
+                        label: 'Blog Posts',
+                        folder: 'src/content/blog',
+                        create: true,
+                        slug: '{{year}}-{{month}}-{{day}}-{{slug}}',
+                        fields: [
+                          { label: 'Title', name: 'title', widget: 'string' },
+                          { label: 'SEO Title', name: 'seoTitle', widget: 'string', required: false },
+                          { label: 'SEO Description', name: 'seoDescription', widget: 'text', required: false },
+                          { label: 'Keywords', name: 'keywords', widget: 'string', required: false },
+                          { label: 'Excerpt', name: 'excerpt', widget: 'text' },
+                          { label: 'Content', name: 'body', widget: 'markdown' },
+                          { label: 'Author', name: 'author', widget: 'string', default: 'NestWise Team' },
+                          { label: 'Publish Date', name: 'date', widget: 'datetime' },
+                          { label: 'Featured Image', name: 'thumbnail', widget: 'image', required: false },
+                          { label: 'Read Time (minutes)', name: 'readTime', widget: 'number', default: 3 },
+                          { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
+                        ]
+                      }
                     ]
                   }
-                ]
+                });
+                console.log('CMS initialization completed successfully');
+              } catch (error) {
+                console.error('Error initializing CMS:', error);
               }
-            });
-          }
+            } else {
+              console.error('NetlifyCMS not found in window object');
+            }
+          }, 1000);
+        };
+        cmsScript.onerror = (error) => {
+          console.error('Error loading CMS script:', error);
         };
         document.body.appendChild(cmsScript);
+      };
+      identityScript.onerror = (error) => {
+        console.error('Error loading identity script:', error);
       };
       document.body.appendChild(identityScript);
     };
@@ -85,6 +102,12 @@ const AdminPage: React.FC = () => {
               <p className="text-sm text-gray-500 mt-4">
                 Loading Netlify CMS...
               </p>
+              <div className="mt-4 p-3 bg-blue-50 border border-blue-200 rounded">
+                <p className="text-xs text-blue-700">
+                  <strong>Debug Info:</strong> AdminPage component loaded successfully. 
+                  Check browser console for CMS loading progress.
+                </p>
+              </div>
             </div>
           </div>
         </div>
