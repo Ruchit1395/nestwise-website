@@ -72,11 +72,11 @@ const FeaturesPage: React.FC = () => {
           </p>
           
           {/* Feature Comparison Visual */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-4xl mx-auto">
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 max-w-4xl mx-auto shadow-xl">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="text-center">
-                <div className="text-red-400 text-4xl font-bold mb-2">Manual Tracking</div>
-                <ul className="text-left space-y-2 text-gray-300">
+                <div className="text-red-600 text-4xl font-bold mb-2">Manual Tracking</div>
+                <ul className="text-left space-y-2 text-gray-700">
                   <li>• Spreadsheet chaos</li>
                   <li>• Missing documentation</li>
                   <li>• Audit failures</li>
@@ -84,8 +84,8 @@ const FeaturesPage: React.FC = () => {
                 </ul>
               </div>
               <div className="text-center">
-                <div className="text-accent text-4xl font-bold mb-2">NestWise LLC</div>
-                <ul className="text-left space-y-2 text-gray-200">
+                <div className="text-primary text-4xl font-bold mb-2">NestWise LLC</div>
+                <ul className="text-left space-y-2 text-gray-800">
                   <li>• Automated compliance</li>
                   <li>• Complete documentation</li>
                   <li>• Audit-ready reports</li>
