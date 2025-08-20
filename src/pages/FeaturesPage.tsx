@@ -304,9 +304,9 @@ const FeaturesPage: React.FC = () => {
             </div>
           </div>
           
-          <button className="bg-accent text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-accent/90 transition-all duration-200 shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
+          <a href="https://app.nestwise.us" className="inline-block bg-cta text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-cta/90 transition-all duration-200 shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
             Start Your Success Story Today
-          </button>
+          </a>
         </div>
       </section>
     </div>
