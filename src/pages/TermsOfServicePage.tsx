@@ -27,7 +27,7 @@ const TermsOfServicePage: React.FC = () => {
                 <h2 className="text-2xl font-bold text-primary">Acceptance of Terms</h2>
               </div>
               <p className="text-gray-700 mb-6">
-                By accessing and using NestWise LLC's REPS compliance tracking platform, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our service.
+                By accessing and using NestWise LLC's nestwise REPS compliance tracking platform, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our service.
               </p>
 
               <div className="flex items-center mb-6 mt-8">
@@ -35,7 +35,7 @@ const TermsOfServicePage: React.FC = () => {
                 <h2 className="text-2xl font-bold text-primary">Service Description</h2>
               </div>
               <p className="text-gray-700 mb-6">
-                NestWise LLC provides a professional REPS compliance tracking platform designed to help real estate investors maintain proper documentation, track compliance requirements, and maximize tax benefits.
+                NestWise LLC provides a professional nestwise REPS compliance tracking platform designed to help real estate investors maintain proper documentation, track compliance requirements, and maximize tax benefits.
               </p>
 
               <h2 className="text-2xl font-bold text-primary mt-8 mb-4">User Responsibilities</h2>
@@ -51,12 +51,12 @@ const TermsOfServicePage: React.FC = () => {
                 <h2 className="text-2xl font-bold text-primary">Limitation of Liability</h2>
               </div>
               <p className="text-gray-700 mb-6">
-                While we strive to provide accurate and reliable information, NestWise LLC is not responsible for any decisions made based on the data provided through our platform. Users should consult with qualified tax professionals for specific advice.
+                While we strive to provide accurate and reliable information, NestWise LLC is not responsible for any decisions made based on the data provided through our nestwise platform. Users should consult with qualified tax professionals for specific advice.
               </p>
 
               <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Intellectual Property</h2>
               <p className="text-gray-700 mb-6">
-                All content, features, and functionality of the NestWise platform are owned by NestWise LLC and are protected by copyright, trademark, and other intellectual property laws.
+                All content, features, and functionality of the nestwise platform are owned by NestWise LLC and are protected by copyright, trademark, and other intellectual property laws.
               </p>
 
               <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Contact Us</h2>

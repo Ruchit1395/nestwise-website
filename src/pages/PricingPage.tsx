@@ -37,7 +37,7 @@ const PricingPage: React.FC = () => {
               = 13,000% ROI
             </div>
             <p className="text-gray-200 mt-4">
-              Average REPS tax savings vs annual NestWise LLC cost
+              Average REPS tax savings vs annual nestwise cost
             </p>
           </div>
         </div>
@@ -191,7 +191,7 @@ const PricingPage: React.FC = () => {
               </div>
               <div className="text-center">
                 <div className="text-6xl font-bold text-accent mb-2">$348</div>
-                <div className="text-gray-600">Annual NestWise LLC cost</div>
+                <div className="text-gray-600">Annual nestwise cost</div>
               </div>
               <div className="text-center">
                 <div className="text-6xl font-bold text-secondary mb-2">$45K</div>

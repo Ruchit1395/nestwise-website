@@ -27,7 +27,7 @@ const PrivacyPolicyPage: React.FC = () => {
                 <h2 className="text-2xl font-bold text-primary">Data Protection</h2>
               </div>
               <p className="text-gray-700 mb-4">
-                At NestWise LLC, we take your privacy seriously. This Privacy Policy explains how we collect, use, and protect your personal information when you use our REPS compliance tracking platform.
+                At NestWise LLC, we take your privacy seriously. This Privacy Policy explains how we collect, use, and protect your personal information when you use our nestwise REPS compliance tracking platform.
               </p>
 
               <div className="flex items-center mb-6 mt-8">

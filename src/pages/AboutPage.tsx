@@ -116,7 +116,7 @@ const AboutPage: React.FC = () => {
             <div className="bg-green-50 rounded-2xl p-8 border-2 border-green-200">
               <div className="text-6xl font-bold text-green-600 mb-4">99.7%</div>
               <div className="text-xl font-semibold text-green-700 mb-2">success rate</div>
-                              <div className="text-gray-600">with proper NestWise LLC tracking</div>
+                              <div className="text-gray-600">with proper nestwise tracking</div>
             </div>
           </div>
         </div>
@@ -172,7 +172,7 @@ const AboutPage: React.FC = () => {
             <div>
               <h2 className="text-4xl font-bold mb-6">The Future of Real Estate Tax Strategy</h2>
               <p className="text-xl text-gray-200 mb-8">
-                NestWise LLC is just the beginning. We're building the most comprehensive real estate tax optimization platform ever created.
+                nestwise is just the beginning. We're building the most comprehensive real estate tax optimization platform ever created.
               </p>
               
               <div className="space-y-4">
