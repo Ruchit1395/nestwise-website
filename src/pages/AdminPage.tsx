@@ -30,13 +30,13 @@ const AdminPage: React.FC = () => {
                                     backend: {
                   name: 'git-gateway',
                   branch: 'main',
-                  site_id: 'e1fa7c8b-24da-40c5-a0b8-a838cf199ad7'
+                  site_id: 'stellular-cajeta-a075ce'
                 },
                     local_backend: false,
                     media_folder: 'public/images/blog',
                     public_folder: '/images/blog',
-                                    site_url: 'https://www.nestwise.us',
-                display_url: 'https://www.nestwise.us',
+                                    site_url: 'https://stellular-cajeta-a075ce.netlify.app',
+                display_url: 'https://stellular-cajeta-a075ce.netlify.app',
                     collections: [
                       {
                         name: 'blog',
