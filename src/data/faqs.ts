@@ -9,7 +9,7 @@ export const faqs: FAQItem[] = [
   {
     id: '2',
     question: 'What if I don\'t qualify for REPS this year?',
-    answer: 'No problem! NestWise tracks all your real estate activities, so you\'ll be ready when you do qualify. Plus, you can still benefit from organized record-keeping.'
+          answer: 'No problem! NestWise LLC tracks all your real estate activities, so you\'ll be ready when you do qualify. Plus, you can still benefit from organized record-keeping.'
   },
   {
     id: '3',

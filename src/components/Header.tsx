@@ -23,7 +23,7 @@ const Header: React.FC = () => {
           <Link to="/" className="flex items-center">
             <img 
               src="/nestwise_logo_teal_cream_bg.png" 
-              alt="NestWise" 
+              alt="NestWise LLC" 
               className="h-16 w-auto"
             />
           </Link>

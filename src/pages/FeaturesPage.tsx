@@ -84,7 +84,7 @@ const FeaturesPage: React.FC = () => {
                 </ul>
               </div>
               <div className="text-center">
-                <div className="text-accent text-4xl font-bold mb-2">NestWise</div>
+                <div className="text-accent text-4xl font-bold mb-2">NestWise LLC</div>
                 <ul className="text-left space-y-2 text-gray-200">
                   <li>• Automated compliance</li>
                   <li>• Complete documentation</li>

@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
             <Link to="/" className="text-2xl font-bold">
               <img 
                 src="/nestwise_logo_teal_cream_bg.png" 
-                alt="NestWise" 
+                alt="NestWise LLC" 
                 className="h-8 w-auto"
               />
             </Link>
@@ -75,23 +75,14 @@ const Footer: React.FC = () => {
               <li>
                 <span className="text-gray-600">Response time: &lt; 4 hours</span>
               </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-primary transition-colors">
-                  Knowledge Base
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-primary transition-colors">
-                  Help Center
-                </a>
-              </li>
+
             </ul>
           </div>
         </div>
 
         <div className="mt-8 pt-8 border-t border-gray-300 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-600 text-sm">
-            © 2025 NestWise. All rights reserved.
+            © 2025 NestWise LLC. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0 flex space-x-6 text-sm text-gray-600">
             <a href="#" className="hover:text-primary">Privacy Policy</a>
