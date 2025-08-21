@@ -46,18 +46,18 @@ const HomePage: React.FC = () => {
                       <span className="font-bold text-primary">750+</span>
                     </div>
                     <div className="w-full h-24 flex items-end justify-between">
-                      {/* Cumulative monthly progress bars - each month adds to the total */}
-                      <div className="flex-1 bg-green-400 rounded-t-sm mx-0.5" style={{height: '12%'}}></div>
-                      <div className="flex-1 bg-green-500 rounded-t-sm mx-0.5" style={{height: '25%'}}></div>
-                      <div className="flex-1 bg-green-400 rounded-t-sm mx-0.5" style={{height: '38%'}}></div>
-                      <div className="flex-1 bg-green-500 rounded-t-sm mx-0.5" style={{height: '52%'}}></div>
-                      <div className="flex-1 bg-green-400 rounded-t-sm mx-0.5" style={{height: '65%'}}></div>
-                      <div className="flex-1 bg-green-500 rounded-t-sm mx-0.5" style={{height: '78%'}}></div>
+                      {/* Cumulative monthly progress bars - realistic progression throughout the year */}
+                      <div className="flex-1 bg-green-400 rounded-t-sm mx-0.5" style={{height: '8%'}}></div>
+                      <div className="flex-1 bg-green-500 rounded-t-sm mx-0.5" style={{height: '18%'}}></div>
+                      <div className="flex-1 bg-green-400 rounded-t-sm mx-0.5" style={{height: '28%'}}></div>
+                      <div className="flex-1 bg-green-500 rounded-t-sm mx-0.5" style={{height: '39%'}}></div>
+                      <div className="flex-1 bg-green-400 rounded-t-sm mx-0.5" style={{height: '51%'}}></div>
+                      <div className="flex-1 bg-green-500 rounded-t-sm mx-0.5" style={{height: '63%'}}></div>
+                      <div className="flex-1 bg-green-400 rounded-t-sm mx-0.5" style={{height: '72%'}}></div>
+                      <div className="flex-1 bg-green-500 rounded-t-sm mx-0.5" style={{height: '79%'}}></div>
                       <div className="flex-1 bg-green-400 rounded-t-sm mx-0.5" style={{height: '85%'}}></div>
-                      <div className="flex-1 bg-green-500 rounded-t-sm mx-0.5" style={{height: '89%'}}></div>
-                      <div className="flex-1 bg-green-400 rounded-t-sm mx-0.5" style={{height: '93%'}}></div>
-                      <div className="flex-1 bg-green-500 rounded-t-sm mx-0.5" style={{height: '96%'}}></div>
-                      <div className="flex-1 bg-green-400 rounded-t-sm mx-0.5" style={{height: '98%'}}></div>
+                      <div className="flex-1 bg-green-500 rounded-t-sm mx-0.5" style={{height: '90%'}}></div>
+                      <div className="flex-1 bg-green-400 rounded-t-sm mx-0.5" style={{height: '95%'}}></div>
                       <div className="flex-1 bg-green-500 rounded-t-sm mx-0.5" style={{height: '100%'}}></div>
                     </div>
                     <div className="w-full flex justify-between text-xs text-gray-500 mt-2">
