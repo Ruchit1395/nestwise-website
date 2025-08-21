@@ -11,7 +11,6 @@ const HomePage: React.FC = () => {
     <div className="pt-16">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-secondary to-secondary/80 text-neutral-800 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/5849590/pexels-photo-5849590.jpeg?auto=compress&cs=tinysrgb&w=800&format=webp')] bg-cover bg-center opacity-10"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-up">
