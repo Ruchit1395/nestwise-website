@@ -45,7 +45,7 @@ const HomePage: React.FC = () => {
                       <span className="text-gray-600">Monthly Hours Logged</span>
                       <span className="font-bold text-primary">750+</span>
                     </div>
-                    <div className="w-full h-20 flex items-end justify-between space-x-1">
+                    <div className="w-full h-20 flex items-end justify-between">
                       <div className="flex-1 bg-green-400 rounded-t-sm" style={{height: '60%'}}></div>
                       <div className="flex-1 bg-green-500 rounded-t-sm" style={{height: '80%'}}></div>
                       <div className="flex-1 bg-green-400 rounded-t-sm" style={{height: '45%'}}></div>
@@ -59,7 +59,20 @@ const HomePage: React.FC = () => {
                       <div className="flex-1 bg-green-400 rounded-t-sm" style={{height: '65%'}}></div>
                       <div className="flex-1 bg-green-500 rounded-t-sm" style={{height: '88%'}}></div>
                     </div>
-                    <div className="text-xs text-gray-500 text-center">Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec</div>
+                    <div className="w-full flex justify-between text-xs text-gray-500">
+                      <span>Jan</span>
+                      <span>Feb</span>
+                      <span>Mar</span>
+                      <span>Apr</span>
+                      <span>May</span>
+                      <span>Jun</span>
+                      <span>Jul</span>
+                      <span>Aug</span>
+                      <span>Sep</span>
+                      <span>Oct</span>
+                      <span>Nov</span>
+                      <span>Dec</span>
+                    </div>
                     <div className="text-sm text-gray-500 text-center">Status: REPS Qualified ✓</div>
                   </div>
                 </div>
