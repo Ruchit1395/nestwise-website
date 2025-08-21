@@ -16,11 +16,10 @@ const HomePage: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-up">
               <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Your Path to REPS 
-                <span className="text-blue-800 font-extrabold"> Qualification Starts Here</span>
+                Confidently Qualify for REPS - Without the Hassles
               </h1>
               <p className="text-xl mb-8 text-neutral-700">
-                REPS Tracking Made Simple, Accurate, and IRS-Ready
+                Join smart investors who've achieved REPS qualification with our structured tracking system.
               </p>
               
               <div className="mb-12">
