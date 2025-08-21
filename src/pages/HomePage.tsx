@@ -18,9 +18,9 @@ const HomePage: React.FC = () => {
               <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                 Confidently Qualify for REPS - Without the Hassles
               </h1>
-              <p className="text-xl mb-8 text-neutral-700">
-                Join smart investors who've achieved REPS qualification with our structured tracking system.
-              </p>
+                              <p className="text-xl mb-8 text-neutral-700">
+                  REPS Tracking Made Simple, Accurate, and Compliant
+                </p>
               
               <div className="mb-12">
                 <StatsBar />
