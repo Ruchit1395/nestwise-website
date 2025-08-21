@@ -5,13 +5,13 @@ const StatsBar: React.FC = () => {
   const stats = [
     {
       icon: Shield,
-      label: 'IRS-Compliant',
+      label: 'Compliant',
       value: 'IRS'
     },
     {
       icon: Clock,
-      label: 'Setup Time',
-      value: 'Quick'
+      label: 'Set-up',
+      value: 'Quick & Easy'
     },
     {
       icon: FileCheck,
