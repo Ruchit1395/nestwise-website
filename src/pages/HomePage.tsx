@@ -222,7 +222,7 @@ const HomePage: React.FC = () => {
           
                       <h2 className="text-4xl font-bold mb-6">Confidently Qualify for REPS - Without the Hassles</h2>
                                 <p className="text-xl mb-8 text-neutral-700 max-w-3xl mx-auto">
-            Join smart investors like you who've achieved REPS qualification with our structured, IRS-approved tracking system.
+            Join smart investors like you who've achieved REPS qualification with our structured tracking system.
           </p>
           
           <a href="https://app.nestwise.us" className="bg-cta text-white px-12 py-6 rounded-lg font-bold text-xl hover:bg-cta/90 transition-all duration-200 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 animate-bounce-subtle">
