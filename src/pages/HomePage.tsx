@@ -45,21 +45,26 @@ const HomePage: React.FC = () => {
                       <span className="text-gray-600">Monthly Hours Logged</span>
                       <span className="font-bold text-primary">750+</span>
                     </div>
-                    <div className="w-full h-20 flex items-end justify-between">
-                      <div className="flex-1 bg-green-400 rounded-t-sm" style={{height: '60%'}}></div>
-                      <div className="flex-1 bg-green-500 rounded-t-sm" style={{height: '80%'}}></div>
-                      <div className="flex-1 bg-green-400 rounded-t-sm" style={{height: '45%'}}></div>
-                      <div className="flex-1 bg-green-500 rounded-t-sm" style={{height: '90%'}}></div>
-                      <div className="flex-1 bg-green-400 rounded-t-sm" style={{height: '70%'}}></div>
-                      <div className="flex-1 bg-green-500 rounded-t-sm" style={{height: '85%'}}></div>
-                      <div className="flex-1 bg-green-400 rounded-t-sm" style={{height: '55%'}}></div>
-                      <div className="flex-1 bg-green-500 rounded-t-sm" style={{height: '95%'}}></div>
-                      <div className="flex-1 bg-green-400 rounded-t-sm" style={{height: '75%'}}></div>
-                      <div className="flex-1 bg-green-500 rounded-t-sm" style={{height: '100%'}}></div>
-                      <div className="flex-1 bg-green-400 rounded-t-sm" style={{height: '65%'}}></div>
-                      <div className="flex-1 bg-green-500 rounded-t-sm" style={{height: '88%'}}></div>
+                    <div className="w-full h-24 flex items-end justify-between relative">
+                      {/* Goal line at 750 hours */}
+                      <div className="absolute top-0 left-0 right-0 h-px bg-red-400 border-dashed border-red-400"></div>
+                      <div className="absolute -top-6 left-0 text-xs text-red-500 font-semibold">750 hrs Goal</div>
+                      
+                      {/* Monthly progress bars */}
+                      <div className="flex-1 bg-green-400 rounded-t-sm mx-0.5" style={{height: '65%'}}></div>
+                      <div className="flex-1 bg-green-500 rounded-t-sm mx-0.5" style={{height: '78%'}}></div>
+                      <div className="flex-1 bg-green-400 rounded-t-sm mx-0.5" style={{height: '52%'}}></div>
+                      <div className="flex-1 bg-green-500 rounded-t-sm mx-0.5" style={{height: '85%'}}></div>
+                      <div className="flex-1 bg-green-400 rounded-t-sm mx-0.5" style={{height: '72%'}}></div>
+                      <div className="flex-1 bg-green-500 rounded-t-sm mx-0.5" style={{height: '88%'}}></div>
+                      <div className="flex-1 bg-green-400 rounded-t-sm mx-0.5" style={{height: '58%'}}></div>
+                      <div className="flex-1 bg-green-500 rounded-t-sm mx-0.5" style={{height: '92%'}}></div>
+                      <div className="flex-1 bg-green-400 rounded-t-sm mx-0.5" style={{height: '76%'}}></div>
+                      <div className="flex-1 bg-green-500 rounded-t-sm mx-0.5" style={{height: '95%'}}></div>
+                      <div className="flex-1 bg-green-400 rounded-t-sm mx-0.5" style={{height: '68%'}}></div>
+                      <div className="flex-1 bg-green-500 rounded-t-sm mx-0.5" style={{height: '82%'}}></div>
                     </div>
-                    <div className="w-full flex justify-between text-xs text-gray-500">
+                    <div className="w-full flex justify-between text-xs text-gray-500 mt-2">
                       <span>Jan</span>
                       <span>Feb</span>
                       <span>Mar</span>
