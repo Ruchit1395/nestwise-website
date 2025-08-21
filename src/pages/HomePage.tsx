@@ -37,22 +37,30 @@ const HomePage: React.FC = () => {
             <div className="relative animate-fade-in">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
                 <div className="bg-white rounded-xl p-6 shadow-2xl">
-                  <div className="flex items-center justify-between mb-4">
+                  <div className="mb-4">
                     <h3 className="text-lg font-bold text-primary">REPS Dashboard</h3>
-                    <div className="flex items-center text-green-600">
-                      <CheckCircle className="w-5 h-5 mr-1" />
-                      <span className="text-sm font-semibold">IRS Compliant</span>
-                    </div>
                   </div>
-                  <div className="space-y-3">
+                  <div className="space-y-4">
                     <div className="flex justify-between items-center">
-                      <span className="text-gray-600">Hours Tracking</span>
+                      <span className="text-gray-600">Monthly Hours Logged</span>
                       <span className="font-bold text-primary">750+</span>
                     </div>
-                    <div className="w-full bg-gray-200 rounded-full h-3">
-                      <div className="bg-green-500 h-3 rounded-full" style={{width: '100%'}}></div>
+                    <div className="w-full h-20 flex items-end justify-between space-x-1">
+                      <div className="flex-1 bg-green-400 rounded-t-sm" style={{height: '60%'}}></div>
+                      <div className="flex-1 bg-green-500 rounded-t-sm" style={{height: '80%'}}></div>
+                      <div className="flex-1 bg-green-400 rounded-t-sm" style={{height: '45%'}}></div>
+                      <div className="flex-1 bg-green-500 rounded-t-sm" style={{height: '90%'}}></div>
+                      <div className="flex-1 bg-green-400 rounded-t-sm" style={{height: '70%'}}></div>
+                      <div className="flex-1 bg-green-500 rounded-t-sm" style={{height: '85%'}}></div>
+                      <div className="flex-1 bg-green-400 rounded-t-sm" style={{height: '55%'}}></div>
+                      <div className="flex-1 bg-green-500 rounded-t-sm" style={{height: '95%'}}></div>
+                      <div className="flex-1 bg-green-400 rounded-t-sm" style={{height: '75%'}}></div>
+                      <div className="flex-1 bg-green-500 rounded-t-sm" style={{height: '100%'}}></div>
+                      <div className="flex-1 bg-green-400 rounded-t-sm" style={{height: '65%'}}></div>
+                      <div className="flex-1 bg-green-500 rounded-t-sm" style={{height: '88%'}}></div>
                     </div>
-                    <div className="text-sm text-gray-500">Status: REPS Qualified ✓</div>
+                    <div className="text-xs text-gray-500 text-center">Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec</div>
+                    <div className="text-sm text-gray-500 text-center">Status: REPS Qualified ✓</div>
                   </div>
                 </div>
               </div>
