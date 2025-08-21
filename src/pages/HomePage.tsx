@@ -45,11 +45,7 @@ const HomePage: React.FC = () => {
                       <span className="text-gray-600">Monthly Hours Logged</span>
                       <span className="font-bold text-primary">750+</span>
                     </div>
-                    <div className="w-full h-24 flex items-end justify-between relative">
-                      {/* Goal line at 750 hours */}
-                      <div className="absolute top-0 left-0 right-0 h-px bg-red-400 border-dashed border-red-400"></div>
-                      <div className="absolute -top-6 left-0 text-xs text-red-500 font-semibold">750 hrs Goal</div>
-                      
+                    <div className="w-full h-24 flex items-end justify-between">
                       {/* Cumulative monthly progress bars - each month adds to the total */}
                       <div className="flex-1 bg-green-400 rounded-t-sm mx-0.5" style={{height: '12%'}}></div>
                       <div className="flex-1 bg-green-500 rounded-t-sm mx-0.5" style={{height: '25%'}}></div>
