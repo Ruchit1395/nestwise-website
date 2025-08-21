@@ -1,84 +1,55 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { ArrowLeft, Cookie, Settings, Info } from 'lucide-react';
 
 const CookiePolicyPage: React.FC = () => {
   return (
-    <div className="pt-16">
-      <section className="bg-gradient-to-br from-primary to-primary/80 text-white py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Link to="/" className="inline-flex items-center text-white/90 hover:text-white transition-colors mb-6">
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Home
-          </Link>
-          <h1 className="text-4xl lg:text-5xl font-bold mb-6">Cookie Policy</h1>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto">
-            How we use cookies to improve your experience
-          </p>
+    <div className="pt-16 min-h-screen bg-gray-50">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold text-primary mb-4">Cookie Policy</h1>
+          <p className="text-xl text-gray-600">Nestwise</p>
+          <p className="text-gray-500">Effective Date: August 19, 2025</p>
         </div>
-      </section>
 
-      <section className="py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Content */}
+        <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-12">
           <div className="prose prose-lg max-w-none">
-            <div className="bg-white rounded-xl shadow-lg p-8">
-              <div className="flex items-center mb-6">
-                <Cookie className="w-8 h-8 text-primary mr-3" />
-                <h2 className="text-2xl font-bold text-primary">What Are Cookies?</h2>
-              </div>
-              <p className="text-gray-700 mb-6">
-                Cookies are small text files that are stored on your device when you visit our website. They help us provide you with a better experience and understand how you use our platform.
-              </p>
+            <h2 className="text-2xl font-bold text-primary mb-4">Overview</h2>
+            <p className="text-gray-700 mb-8">
+              When you visit our website, we or our third-party partners may store or retrieve information on your browser, 
+              mainly through cookies. We use this information to make the site function as you expect, to track analytics and 
+              provide a more personalized web experience, to personalize ads and measure the success of our marketing campaigns 
+              and similar activities as described in our Privacy Notice.
+            </p>
 
-              <div className="flex items-center mb-6 mt-8">
-                <Settings className="w-8 h-8 text-primary mr-3" />
-                <h2 className="text-2xl font-bold text-primary">Types of Cookies We Use</h2>
-              </div>
-              <div className="space-y-4 mb-6">
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-800 mb-2">Essential Cookies</h3>
-                  <p className="text-gray-700">Required for the website to function properly, including authentication and security features.</p>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-800 mb-2">Performance Cookies</h3>
-                  <p className="text-gray-700">Help us understand how visitors interact with our website to improve performance.</p>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-800 mb-2">Functional Cookies</h3>
-                  <p className="text-gray-700">Remember your preferences and settings to enhance your experience.</p>
-                </div>
-              </div>
+            <h2 className="text-2xl font-bold text-primary mb-4">Do Not Sell or Share My Personal Information</h2>
+            <p className="text-gray-700 mb-8">
+              Under certain privacy laws, you have the right to direct a business not to "sell" or "share" your personal 
+              information, including for targeted advertising purposes.
+            </p>
 
-              <div className="flex items-center mb-6 mt-8">
-                <Info className="w-8 h-8 text-primary mr-3" />
-                <h2 className="text-2xl font-bold text-primary">Managing Cookies</h2>
-              </div>
-              <p className="text-gray-700 mb-6">
-                You can control and manage cookies through your browser settings. Most browsers allow you to refuse cookies or delete them. However, disabling certain cookies may affect the functionality of our website.
-              </p>
+            <h2 className="text-2xl font-bold text-primary mb-4">Learn More About Our Privacy Practices</h2>
+            <p className="text-gray-700 mb-8">
+              To learn more about our privacy practices, please visit our{' '}
+              <a href="/privacy" className="text-primary hover:text-primary/80">Privacy Policy</a>.
+            </p>
 
-              <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Third-Party Cookies</h2>
-              <p className="text-gray-700 mb-6">
-                We may use third-party services that place cookies on your device. These services help us analyze website traffic, provide customer support, and improve our services.
-              </p>
-
-              <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Contact Us</h2>
+            <h2 className="text-2xl font-bold text-primary mb-4">Contact Us</h2>
+            <p className="text-gray-700 mb-4">
+              If you have questions about this Cookie Policy, please contact us at:
+            </p>
+            <div className="bg-gray-50 rounded-lg p-6 mb-8">
+              <p className="font-semibold text-gray-800">NestWise LLC</p>
               <p className="text-gray-700">
-                If you have questions about our Cookie Policy, please contact us at{' '}
-                <a href="mailto:support@nestwise.us" className="text-primary hover:underline">
-                  support@nestwise.us
-                </a>
+                Email: <a href="mailto:support@nestwise.us" className="text-primary hover:text-primary/80">support@nestwise.us</a>
               </p>
-
-              <div className="mt-8 pt-6 border-t border-gray-200">
-                <p className="text-sm text-gray-500">
-                  Last updated: January 2025
-                </p>
-              </div>
+              <p className="text-gray-700">
+                Website: <a href="https://www.nestwise.us" className="text-primary hover:text-primary/80">https://www.nestwise.us</a>
+              </p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 };
