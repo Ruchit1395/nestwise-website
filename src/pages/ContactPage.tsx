@@ -69,14 +69,10 @@ const ContactPage: React.FC = () => {
               </div>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center text-sm text-gray-600">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-center text-sm text-gray-600">
               <div className="flex items-center justify-center">
                 <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
                 REPS Compliance Audit Reports
-              </div>
-              <div className="flex items-center justify-center">
-                <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-
               </div>
               <div className="flex items-center justify-center">
                 <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
