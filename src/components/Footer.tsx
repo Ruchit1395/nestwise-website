@@ -27,10 +27,6 @@ const Footer: React.FC = () => {
                 <Shield className="w-4 h-4 mr-2" />
                 Bank-Level Security
               </div>
-              <div className="flex items-center text-sm text-gray-600">
-                <Clock className="w-4 h-4 mr-2" />
-                99.9% Uptime
-              </div>
             </div>
           </div>
 
