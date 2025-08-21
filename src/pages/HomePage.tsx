@@ -87,8 +87,8 @@ const HomePage: React.FC = () => {
                 <div className="flex items-start h-full">
                   <AlertTriangle className="w-6 h-6 text-red-500 mr-3 mt-1" />
                   <div className="flex flex-col justify-center h-full">
-                    <h3 className="text-lg font-bold text-primary mb-2">Accuracy Problems</h3>
-                    <p className="text-gray-600">Manual tracking results in errors and inconsistent categorization.</p>
+                    <h3 className="text-lg font-bold text-primary mb-2">Poor Categorization</h3>
+                    <p className="text-gray-600">Activities not properly categorized according to IRS guidelines.</p>
                   </div>
                 </div>
               </div>
@@ -97,8 +97,8 @@ const HomePage: React.FC = () => {
                 <div className="flex items-start h-full">
                   <AlertTriangle className="w-6 h-6 text-red-500 mr-3 mt-1" />
                   <div className="flex flex-col justify-center h-full">
-                    <h3 className="text-lg font-bold text-primary mb-2">Poor Categorization</h3>
-                    <p className="text-gray-600">Activities not properly categorized according to IRS guidelines.</p>
+                    <h3 className="text-lg font-bold text-primary mb-2">Accuracy Problems</h3>
+                    <p className="text-gray-600">Manual tracking results in errors and inconsistent categorization.</p>
                   </div>
                 </div>
               </div>
