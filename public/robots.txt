@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.nestwise.us/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+# Allow important pages
+Allow: /
+Allow: /features
+Allow: /about
+Allow: /contact
+Allow: /blog
+Allow: /privacy
+Allow: /terms
+Allow: /cookies
+
+# Crawl delay (optional)
+Crawl-delay: 1
