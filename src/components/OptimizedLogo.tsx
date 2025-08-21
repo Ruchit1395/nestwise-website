@@ -15,7 +15,7 @@ const OptimizedLogo: React.FC<OptimizedLogoProps> = ({ size = 'md', className = 
 
   return (
     <img
-      src="/logo-optimized.svg"
+      src="/nestwise_logo_teal_cream_bg (1).png"
       alt="NestWise LLC"
       className={`${sizeClasses[size]} ${className} object-contain`}
       loading="eager"
