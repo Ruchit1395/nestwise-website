@@ -128,12 +128,11 @@ const ContactPage: React.FC = () => {
                 <div className="text-4xl mb-4">{resource.icon}</div>
                 <h3 className="text-lg font-semibold text-primary mb-2">{resource.title}</h3>
                 <p className="text-gray-600 text-sm mb-4">{resource.description}</p>
-                <a
-                  href={resource.link}
-                  className="text-accent font-semibold hover:text-accent/80 transition-colors"
+                <span
+                  className="text-accent font-semibold opacity-75 cursor-default"
                 >
-                  Read More →
-                </a>
+                  Coming Soon
+                </span>
               </div>
             ))}
           </div>
