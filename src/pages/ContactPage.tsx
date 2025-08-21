@@ -44,7 +44,7 @@ const ContactPage: React.FC = () => {
             <h3 className="text-3xl font-bold text-primary mb-6">Email Us Directly</h3>
             
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Send us your questions, concerns, or feedback. Our REPS compliance experts are standing by to help you maximize your tax savings.
+              Send us your questions, concerns, or feedback. Our REPS compliance audit reports are standing by to help you maximize your tax savings.
             </p>
             
             <div className="bg-primary/5 rounded-xl p-8 mb-8">
@@ -53,10 +53,7 @@ const ContactPage: React.FC = () => {
                 <span className="text-2xl font-bold text-primary">support@nestwise.us</span>
               </div>
               
-              <div className="flex items-center justify-center text-gray-600">
-                <Clock className="w-5 h-5 mr-2" />
-                <span className="font-semibold">Response time: Less than 4 hours</span>
-              </div>
+
             </div>
             
             <div className="space-y-4 mb-8">
@@ -75,11 +72,11 @@ const ContactPage: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center text-sm text-gray-600">
               <div className="flex items-center justify-center">
                 <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                REPS Compliance Experts
+                REPS Compliance Audit Reports
               </div>
               <div className="flex items-center justify-center">
                 <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                Fast Response Times
+
               </div>
               <div className="flex items-center justify-center">
                 <CheckCircle className="w-4 h-4 text-green-500 mr-2" />

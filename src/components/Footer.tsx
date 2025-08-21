@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Shield, Clock } from 'lucide-react';
+import { Mail, Shield } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -71,9 +71,7 @@ const Footer: React.FC = () => {
                   support@nestwise.us
                 </a>
               </li>
-              <li>
-                <span className="text-gray-600">Response time: &lt; 4 hours</span>
-              </li>
+
 
             </ul>
           </div>
