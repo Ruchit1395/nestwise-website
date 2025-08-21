@@ -199,7 +199,7 @@ const HomePage: React.FC = () => {
             />
           </div>
           
-                      <h2 className="text-4xl font-bold mb-6">Confidently Qualify for REPS - Without the Hassle</h2>
+                      <h2 className="text-4xl font-bold mb-6">Confidently Qualify for REPS - Without the Hassles</h2>
                                 <p className="text-xl mb-8 text-neutral-700 max-w-3xl mx-auto">
             Join smart investors like you who've achieved REPS qualification with our structured, IRS-approved tracking system.
           </p>
