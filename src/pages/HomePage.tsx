@@ -174,7 +174,7 @@ const HomePage: React.FC = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-primary mb-6">Trusted by Smart Investors</h2>
             <p className="text-xl text-gray-600">
-              Join thousands of investors who've achieved REPS qualification with confidence
+              Join investors who've achieved REPS qualification with confidence
             </p>
           </div>
           
