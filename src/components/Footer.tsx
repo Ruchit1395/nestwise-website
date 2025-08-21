@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Shield } from 'lucide-react';
+import OptimizedLogo from './OptimizedLogo';
 
 const Footer: React.FC = () => {
   return (
@@ -10,11 +11,7 @@ const Footer: React.FC = () => {
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
             <Link to="/" className="text-2xl font-bold">
-              <img 
-                src="/nestwise_logo_teal_cream_bg.png" 
-                alt="NestWise LLC" 
-                className="h-8 w-auto"
-              />
+              <OptimizedLogo size="sm" />
             </Link>
             <p className="mt-2 text-sm font-semibold text-primary">
               Time is Money. We save you BOTH.

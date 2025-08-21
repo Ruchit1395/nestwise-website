@@ -4,18 +4,31 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Optimized Font Loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap&text=REPS" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap&text=REPS" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap&text=REPS" rel="stylesheet"></noscript>
+    
+    <!-- Preload Critical Resources -->
     <link rel="preload" href="/nestwise_logo_teal_cream_bg.png" as="image" type="image/png">
+    
+    <!-- DNS Prefetch for External Resources -->
     <link rel="dns-prefetch" href="https://images.pexels.com">
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    
+    <!-- Performance Meta Tags -->
+    <meta name="theme-color" content="#0f766e">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    
     <title>NestWise LLC - REPS Compliance Tracking Platform</title>
     <meta name="description" content="Stop losing money on REPS compliance. Professional tax tracking for real estate investors. IRS-compliant, audit-ready, 60-second setup.">
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-
   </body>
 </html>

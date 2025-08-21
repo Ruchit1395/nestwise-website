@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import OptimizedLogo from './OptimizedLogo';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,11 +23,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img 
-              src="/nestwise_logo_teal_cream_bg.png" 
-              alt="NestWise LLC" 
-              className="h-16 w-auto"
-            />
+            <OptimizedLogo size="lg" />
           </Link>
 
           {/* Desktop Navigation */}
