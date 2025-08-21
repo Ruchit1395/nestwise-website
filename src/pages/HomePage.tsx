@@ -54,10 +54,10 @@ const HomePage: React.FC = () => {
                       <div className="flex-1 bg-green-400 rounded-t-sm mx-0.5" style={{height: '65%'}}></div>
                       <div className="flex-1 bg-green-500 rounded-t-sm mx-0.5" style={{height: '78%'}}></div>
                       <div className="flex-1 bg-green-400 rounded-t-sm mx-0.5" style={{height: '85%'}}></div>
-                      <div className="flex-1 bg-green-500 rounded-t-sm mx-0.5" style={{height: '92%'}}></div>
-                      <div className="flex-1 bg-green-400 rounded-t-sm mx-0.5" style={{height: '96%'}}></div>
-                      <div className="flex-1 bg-green-500 rounded-t-sm mx-0.5" style={{height: '98%'}}></div>
-                      <div className="flex-1 bg-green-400 rounded-t-sm mx-0.5" style={{height: '99%'}}></div>
+                      <div className="flex-1 bg-green-500 rounded-t-sm mx-0.5" style={{height: '89%'}}></div>
+                      <div className="flex-1 bg-green-400 rounded-t-sm mx-0.5" style={{height: '93%'}}></div>
+                      <div className="flex-1 bg-green-500 rounded-t-sm mx-0.5" style={{height: '96%'}}></div>
+                      <div className="flex-1 bg-green-400 rounded-t-sm mx-0.5" style={{height: '98%'}}></div>
                       <div className="flex-1 bg-green-500 rounded-t-sm mx-0.5" style={{height: '100%'}}></div>
                     </div>
                     <div className="w-full flex justify-between text-xs text-gray-500 mt-2">
