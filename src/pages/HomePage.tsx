@@ -16,11 +16,7 @@ const HomePage: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-up">
               <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Your Path to REPS
-                <br />
-                Qualification Starts
-                <br />
-                Here
+                Your Path to <span className="text-blue-800 font-extrabold">REPS Qualification Starts Here</span>
               </h1>
                               <p className="text-xl mb-8 text-neutral-700">
                   REPS Tracking Made Simple, Accurate, and Compliant
