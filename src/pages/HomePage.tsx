@@ -41,7 +41,7 @@ const HomePage: React.FC = () => {
                   </div>
                   <div className="space-y-4">
                     <div className="flex justify-between items-center">
-                      <span className="text-gray-600">Monthly Hours Logged</span>
+                      <span className="text-gray-600">Cumulative Hours Logged</span>
                       <span className="font-bold text-primary">750+</span>
                     </div>
                     <div className="w-full h-24 flex items-end justify-between">
