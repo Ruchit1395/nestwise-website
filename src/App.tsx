@@ -4,6 +4,7 @@ import { Analytics } from '@vercel/analytics/react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import CookieConsent from './components/CookieConsent';
 import HomePage from './pages/HomePage';
 import FeaturesPage from './pages/FeaturesPage';
 import PricingPage from './pages/PricingPage';
@@ -40,6 +41,7 @@ function App() {
           </div>
         </main>
         <Footer />
+        <CookieConsent />
       </div>
       <Analytics />
     </Router>

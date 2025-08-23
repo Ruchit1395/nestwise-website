@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { BlogPost } from '../types/blog';
 import { getAllBlogPosts, getBlogPostsByCategory } from '../services/blogService';
 import BlogCard from '../components/BlogCard';
+import { useAnalytics } from '../hooks/useAnalytics';
 
 const BlogPage: React.FC = () => {
+  const { trackEngagement } = useAnalytics('Blog - REPS Compliance Insights');
   const [posts, setPosts] = useState<BlogPost[]>([]);
   const [filteredPosts, setFilteredPosts] = useState<BlogPost[]>([]);
   const [categories, setCategories] = useState<string[]>([]);

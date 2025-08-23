@@ -5,8 +5,16 @@ import FeatureCard from '../components/FeatureCard';
 import TestimonialCard from '../components/TestimonialCard';
 import { features } from '../data/features';
 import { testimonials } from '../data/testimonials';
+import { useAnalytics } from '../hooks/useAnalytics';
+import { analytics } from '../services/analytics';
 
 const HomePage: React.FC = () => {
+  const { trackEngagement } = useAnalytics('Home - NestWise REPS Platform');
+
+  const handleCTAClick = () => {
+    analytics.trackCTAClick('Primary CTA', 'Track My REPS NOW!', 'Hero Section');
+  };
+
   return (
     <div className="pt-16">
       {/* Hero Section */}
@@ -26,7 +34,10 @@ const HomePage: React.FC = () => {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="https://app.nestwise.us" className="bg-cta text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-cta/90 transition-all duration-200 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 flex items-center justify-center">
+                <a 
+                  href="https://app.nestwise.us" 
+                  onClick={handleCTAClick}
+                  className="bg-cta text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-cta/90 transition-all duration-200 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 flex items-center justify-center">
                   Track My REPS NOW!
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </a>

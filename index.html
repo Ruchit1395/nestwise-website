@@ -22,6 +22,37 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-91QB6R05JY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      // Default consent state - denied until user accepts
+      gtag('consent', 'default', {
+        'analytics_storage': 'denied',
+        'ad_storage': 'denied',
+        'functionality_storage': 'denied',
+        'personalization_storage': 'denied',
+        'security_storage': 'granted'
+      });
+      
+      gtag('config', 'G-91QB6R05JY', {
+        page_title: 'NestWise LLC - REPS Compliance Tracking Platform',
+        custom_map: {
+          'custom_parameter_1': 'platform',
+          'custom_parameter_2': 'source'
+        },
+        anonymize_ip: true,
+        allow_google_signals: false,
+        allow_ad_personalization_signals: false
+      });
+      
+      // Set platform as web
+      gtag('set', 'platform', 'web');
+    </script>
+    
     <title>NestWise LLC - REPS Compliance Tracking Platform</title>
     <meta name="description" content="Stop losing money on REPS compliance. Professional tax tracking for real estate investors. IRS-compliant, audit-ready, 60-second setup.">
     

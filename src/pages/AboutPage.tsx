@@ -1,7 +1,9 @@
 import React from 'react';
 import { Target, Users, TrendingUp, Zap } from 'lucide-react';
+import { useAnalytics } from '../hooks/useAnalytics';
 
 const AboutPage: React.FC = () => {
+  const { trackEngagement } = useAnalytics('About - NestWise Mission & Vision');
   const missionPoints = [
     {
       icon: Target,

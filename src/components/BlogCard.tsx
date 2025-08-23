@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { BlogPost } from '../types/blog';
+import { analytics } from '../services/analytics';
 
 interface BlogCardProps {
   post: BlogPost;
@@ -15,6 +16,10 @@ const BlogCard: React.FC<BlogCardProps> = ({ post }) => {
       month: 'long',
       day: 'numeric',
     });
+  };
+
+  const handleBlogClick = () => {
+    analytics.trackBlogInteraction('Blog Post Click', title);
   };
 
   const imageUrl = featuredImage?.fields?.file?.url 
@@ -51,6 +56,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ post }) => {
         
         <Link
           to={`/blog/${slug}`}
+          onClick={handleBlogClick}
           className="inline-flex items-center text-primary hover:text-primary/80 font-medium transition-colors duration-200"
         >
           Read More

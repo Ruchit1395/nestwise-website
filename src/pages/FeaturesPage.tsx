@@ -1,7 +1,9 @@
 import React from 'react';
 import { CheckCircle, TrendingUp, Target, BarChart3, FileText, Bell } from 'lucide-react';
+import { useAnalytics } from '../hooks/useAnalytics';
 
 const FeaturesPage: React.FC = () => {
+  const { trackEngagement } = useAnalytics('Features - REPS Compliance Tools');
   const detailedFeatures = [
     {
       icon: Target,

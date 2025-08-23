@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { BlogPost } from '../types/blog';
 import { getBlogPostBySlug } from '../services/blogService';
+import { useAnalytics } from '../hooks/useAnalytics';
 
 const BlogPostPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -9,6 +10,9 @@ const BlogPostPage: React.FC = () => {
   const [post, setPost] = useState<BlogPost | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  
+  // Analytics will be initialized when post is loaded
+  const { trackEngagement } = useAnalytics(post?.fields?.title || 'Blog Post - NestWise');
 
   useEffect(() => {
     const fetchPost = async () => {

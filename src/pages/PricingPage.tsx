@@ -3,8 +3,10 @@ import { TrendingUp, Check, Star, HelpCircle } from 'lucide-react';
 import PricingCard from '../components/PricingCard';
 import { pricingTiers } from '../data/pricing';
 import { faqs } from '../data/faqs';
+import { useAnalytics } from '../hooks/useAnalytics';
 
 const PricingPage: React.FC = () => {
+  const { trackEngagement } = useAnalytics('Pricing - REPS Compliance Plans');
   const [isAnnual, setIsAnnual] = useState(false);
   const [openFaq, setOpenFaq] = useState<string | null>(null);
 

@@ -1,7 +1,14 @@
 import React from 'react';
 import { Mail, Clock, CheckCircle } from 'lucide-react';
+import { useAnalytics } from '../hooks/useAnalytics';
+import { analytics } from '../services/analytics';
 
 const ContactPage: React.FC = () => {
+  const { trackEngagement } = useAnalytics('Contact - NestWise Support');
+
+  const handleEmailClick = () => {
+    analytics.trackCTAClick('Email Support', 'Send Email Now', 'Contact Page');
+  };
 
   return (
     <div className="pt-16">
@@ -59,6 +66,7 @@ const ContactPage: React.FC = () => {
             <div className="space-y-4 mb-8">
               <a 
                 href="mailto:support@nestwise.us?subject=REPS Compliance Question"
+                onClick={handleEmailClick}
                 className="block bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary/90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 📧 Send Email Now

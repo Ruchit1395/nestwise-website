@@ -1,12 +1,18 @@
 import React from 'react';
 import { Check, Star } from 'lucide-react';
 import { PricingTier } from '../types';
+import { analytics } from '../services/analytics';
 
 interface PricingCardProps {
   tier: PricingTier;
 }
 
 const PricingCard: React.FC<PricingCardProps> = ({ tier }) => {
+  const handlePricingClick = () => {
+    // Track pricing click
+    analytics.trackPricingClick(tier.name, tier.price.toString(), tier.cta);
+  };
+
   return (
     <div className={`relative bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 ${
       tier.popular ? 'ring-2 ring-accent scale-105' : ''
@@ -29,11 +35,14 @@ const PricingCard: React.FC<PricingCardProps> = ({ tier }) => {
           <span className="text-gray-500 ml-2">/{tier.period}</span>
         </div>
         
-        <a href="https://app.nestwise.us" className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-200 block text-center ${
-          tier.popular
-            ? 'bg-accent text-white hover:bg-accent/90 shadow-lg hover:shadow-xl'
-            : 'bg-gray-100 text-primary hover:bg-gray-200'
-        }`}>
+        <a 
+          href="https://app.nestwise.us" 
+          onClick={handlePricingClick}
+          className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-200 block text-center ${
+            tier.popular
+              ? 'bg-accent text-white hover:bg-accent/90 shadow-lg hover:shadow-xl'
+              : 'bg-gray-100 text-primary hover:bg-gray-200'
+          }`}>
           {tier.cta}
         </a>
         
